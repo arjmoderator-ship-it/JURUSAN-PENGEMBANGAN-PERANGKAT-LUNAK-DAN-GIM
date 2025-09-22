@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jurusan PPLG - SMK Cibitung 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+  let docIndex = 0;
+
+  function moveDoc(step) {
+    const slides = document.querySelector(".doc-slides");
+    const totalSlides = slides.children.length;
+    docIndex = (docIndex + step + totalSlides) % totalSlides;
+    slides.style.transform = `translateX(-${docIndex * 720}px)`;
+  }
+</script>
+
+<body>
+  <!-- Hero Section -->
+  <header>
+    <h1>Jurusan PPLG</h1>
+    <p>Pengembangan Perangkat Lunak dan Gim - SMK Cibitung 1</p>
+    <img src="logo jurusan pplg.png" alt="Jurusan PPLG" class="hero-img">
+  </header>
+
+  <!-- Tentang PPLG -->
+  <section>
+    <h2>Apa itu PPLG?</h2>
+    <div class="about">
+      <p>
+        PPLG (Pengembangan Perangkat Lunak dan Gim) adalah jurusan yang mempelajari cara merancang,
+        membuat, dan mengembangkan perangkat lunak (software) serta gim (game). 
+        Jurusan ini membekali siswa dengan keterampilan coding, desain, analisis sistem,
+        serta pengujian aplikasi agar siap bersaing di dunia kerja maupun melanjutkan studi.
+      </p>
+    </div>
+  </section>
+
+  <!-- Struktur Kurikulum -->
+  <section>
+    <h2>Struktur Kurikulum</h2>
+    <table>
+      <tr>
+        <th>Mata Pelajaran</th>
+        <th>Keterangan</th>
+      </tr>
+      <tr>
+        <td>Pemrograman Dasar</td>
+        <td>Belajar logika & dasar coding</td>
+      </tr>
+      <tr>
+        <td>Pemrograman Web & Mobile</td>
+        <td>Membangun aplikasi website & Android/iOS</td>
+      </tr>
+      <tr>
+        <td>Basis Data</td>
+        <td>Mengelola data menggunakan MySQL / MongoDB</td>
+      </tr>
+      <tr>
+        <td>Pengembangan Gim</td>
+        <td>Membuat game dengan Unity, Godot, atau Construct</td>
+      </tr>
+      <tr>
+        <td>Desain UI/UX</td>
+        <td>Merancang tampilan aplikasi yang menarik</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Visi & Misi -->
+  <section>
+    <h2>Visi & Misi</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Visi</h3>
+        <p>
+          Menjadi jurusan unggulan yang menghasilkan lulusan kreatif, inovatif, 
+          dan berdaya saing tinggi di bidang teknologi informasi dan gim.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Misi</h3>
+        <ul>
+          <li>Meningkatkan keterampilan pemrograman siswa.</li>
+          <li>Mengembangkan budaya kerja kreatif & profesional.</li>
+          <li>Menghasilkan karya nyata berupa aplikasi & gim.</li>
+          <li>Menjalin kerjasama dengan industri teknologi.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prospek Kerja & Keunggulan -->
+  <section>
+    <h2>Kenapa Memilih PPLG?</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Prospek Kerja</h3>
+        <p>Software Engineer, Game Developer, Web Developer, Mobile Developer, UI/UX Designer.</p>
+      </div>
+      <div class="card">
+        <h3>Keunggulan</h3>
+        <p>Didukung guru profesional, materi up-to-date, serta proyek nyata sesuai industri.</p>
+      </div>
+      <div class="card">
+        <h3>Tujuan</h3>
+        <p>Mencetak lulusan yang siap kerja di bidang teknologi, kreatif, dan inovatif.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Siswa -->
+  <section>
+    <h2>Hasil Project Siswa</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="project1.jpg" alt="Project Website" class="project-img">
+        <h3>Aplikasi Web Sekolah</h3>
+        <p>Website sekolah dengan fitur informasi siswa, guru, dan berita.</p>
+      </div>
+      <div class="card">
+        <img src="project2.jpg" alt="Project Game" class="project-img">
+        <h3>Game Edukasi</h3>
+        <p>Game interaktif berbasis Unity yang mendidik sekaligus menghibur.</p>
+      </div>
+      <div class="card">
+        <img src="project3.jpg" alt="Project Mobile" class="project-img">
+        <h3>Aplikasi Mobile</h3>
+        <p>Aplikasi Android untuk manajemen keuangan sederhana.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Kelompok Section ===== -->
+<section id="kelompok">
+  <div class="container">
+    <h2>Kelompok Kami</h2>
+    <div class="group-card">
+      <img src="logo jurusan pplg.png" alt="Foto Kelompok" class="group-photo">
+      <div class="group-info">
+        <h3>Kelompok 2</h3>
+        <ul>
+          <li>Anggota 1 - KARINA AGUSTINA RAMDHANI </li>
+          <li>Anggota 2 - BAGUS PRATAMA HIDAYAT</li>
+          <li>Anggota 3 - LOUIS ENGGRASIA PUTRI</li>
+          <li>Anggota 4 - NAILA PEBRIA PUTRI</li>
+          <li>Anggota 5 - ZAINAL I LMI</li>
+          <li>Anggota 6 - ABDILLAH IMNI ISMAIL AL AMIN</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Dokumentasi Section ===== -->
+<section id="dokumentasi">
+  <div class="container">
+    <h2>Dokumentasi Kegiatan</h2>
+    <div class="doc-slider">
+      <div class="doc-slides">
+        <img src="foto sendiri.jpeg" alt="Kegiatan 1">
+        <img src="images/doc2.jpg" alt="Kegiatan 2">
+        <img src="images/doc3.jpg" alt="Kegiatan 3">
+        <img src="images/doc4.jpg" alt="Kegiatan 4">
+      </div>
+      <button class="prev" onclick="moveDoc(-1)">&#10094;</button>
+      <button class="next" onclick="moveDoc(1)">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Jurusan PPLG - SMK Cibitung 1</p> 
+    <p>Ikuti kami di 
+      <a href="https://www.instagram.com/smkcibitung1/">Instagram</a> | 
+      <a href="https://www.facebook.com/cibitung1smk/">Facebook</a>
+    </p>
+  </footer>
+</body>
+</html>
