@@ -6,6 +6,18 @@
   <title>Jurusan PPLG - SMK Cibitung 1</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
+<script>
+  let docIndex = 0;
+
+  function moveDoc(step) {
+    const slides = document.querySelector(".doc-slides");
+    const totalSlides = slides.children.length;
+    docIndex = (docIndex + step + totalSlides) % totalSlides;
+    slides.style.transform = `translateX(-${docIndex * 720}px)`;
+  }
+</script>
+
 <body>
   <!-- Hero Section -->
   <header>
@@ -122,9 +134,47 @@
     </div>
   </section>
 
+  <!-- ===== Kelompok Section ===== -->
+<section id="kelompok">
+  <div class="container">
+    <h2>Kelompok Kami</h2>
+    <div class="group-card">
+      <img src="logo jurusan pplg.png" alt="Foto Kelompok" class="group-photo">
+      <div class="group-info">
+        <h3>Kelompok 2</h3>
+        <ul>
+          <li>Anggota 1 - KARINA AGUSTINA RAMDHANI </li>
+          <li>Anggota 2 - BAGUS PRATAMA HIDAYAT</li>
+          <li>Anggota 3 - LOUIS ENGGRASIA PUTRI</li>
+          <li>Anggota 4 - NAILA PEBRIA PUTRI</li>
+          <li>Anggota 5 - ZAINAL I LMI</li>
+          <li>Anggota 6 - ABDILLAH IMNI ISMAIL AL AMIN</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Dokumentasi Section ===== -->
+<section id="dokumentasi">
+  <div class="container">
+    <h2>Dokumentasi Kegiatan</h2>
+    <div class="doc-slider">
+      <div class="doc-slides">
+        <img src="foto sendiri.jpeg" alt="Kegiatan 1">
+        <img src="images/doc2.jpg" alt="Kegiatan 2">
+        <img src="images/doc3.jpg" alt="Kegiatan 3">
+        <img src="images/doc4.jpg" alt="Kegiatan 4">
+      </div>
+      <button class="prev" onclick="moveDoc(-1)">&#10094;</button>
+      <button class="next" onclick="moveDoc(1)">&#10095;</button>
+    </div>
+  </div>
+</section>
+
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Jurusan PPLG - SMK Cibitung 1</p>
+    <p>&copy; 2025 Jurusan PPLG - SMK Cibitung 1</p> 
     <p>Ikuti kami di 
       <a href="https://www.instagram.com/smkcibitung1/">Instagram</a> | 
       <a href="https://www.facebook.com/cibitung1smk/">Facebook</a>

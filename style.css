@@ -246,3 +246,91 @@ header[id], section[id], footer[id] {
   .grid { gap: 12px; }
   .card { padding: 12px; }
 }
+
+/* ===== Kelompok Section ===== */
+.group-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.group-photo {
+  width: 280px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.group-info {
+  flex: 1;
+  min-width: 240px;
+}
+
+.group-info h3 {
+  color: var(--blue);
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.group-info ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: #333;
+  font-size: 0.98rem;
+}
+
+/* ===== Dokumentasi Section ===== */
+#dokumentasi {
+  padding: 60px 0;
+  background: #f9f9f9;
+}
+
+#dokumentasi h2 {
+  text-align: center;
+  color: var(--blue);
+  margin-bottom: 30px;
+}
+
+/* slider */
+.doc-slider {
+  position: relative;
+  max-width: 720px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.doc-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.doc-slides img {
+  width: 720px;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* tombol */
+.doc-slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.doc-slider .prev { left: 15px; }
+.doc-slider .next { right: 15px; }
